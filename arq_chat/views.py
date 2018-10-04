@@ -4,7 +4,6 @@ from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from .models import Message
 from .forms import ChatForm
-from ipware import get_client_ip
 import datetime
 
 @csrf_exempt
