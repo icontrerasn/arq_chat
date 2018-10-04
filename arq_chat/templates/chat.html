@@ -1,0 +1,10 @@
+<h1>Chat.</h1>
+{% for message in messages %}
+  </br><b>anonymous:</b> {{ message.text }} </br>
+  {{ message.ip }} | {{message.pub_date}}</br>
+{% endfor %}
+</br>
+<form action="" method="post">
+  {{ form }}
+<input type="submit" value="Send">
+</form>
